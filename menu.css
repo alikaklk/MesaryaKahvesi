@@ -15,7 +15,7 @@ body{
     border-color: black;
     border: solid;
     border-radius: 50px;
-    min-height: 50px;
+    height: 20px;
     width: 90%;
     max-width: 1400px;
     display: flex;
@@ -23,6 +23,7 @@ body{
     align-items: center;
     padding: 15px 30px;
     position: sticky;
+    margin-top: 20px;
     top: 0;
     z-index: 1000;
     margin: 0 auto;
