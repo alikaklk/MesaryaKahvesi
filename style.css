@@ -90,7 +90,7 @@ body{
     }
   
     .menu-toggle {
-      display: block;
+      display: none;
     }
 
     .text {
