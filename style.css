@@ -60,7 +60,7 @@
 
 
 body{
-    background-image: url("background.jpg");
+    background-image: url("images/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@ body{
       background-color: #c2c0c0;
       flex-direction: column;
       width: 100%;
-      display: none;
+      display: flex;
       border-radius: 30px;
     }
   
@@ -80,18 +80,14 @@ body{
       display: flex;
     }
 
-    .Logo{
-        max-width:80%;
-    }
-
     .nav-links li a {
         color: rgb(94, 58, 7);
         padding: 12px 20px;
         font-size: 18px;
-        width:80%;
         border-bottom: 1px solid #444;
         align-items: center;
         justify-content: center;
+        margin-right: 0;
     }
   
     .menu-toggle {
