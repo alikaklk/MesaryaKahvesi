@@ -114,7 +114,7 @@ body{
     .text {
         width: auto;
         max-width: 100%; /* karakter sayısına göre ayarla */
-        animation: typing 1s steps(28), blink 0.7s step-end infinite;
+        animation: typing 2s steps(28), blink 0.7s step-end infinite;
         white-space: normal;
         overflow: visible;
         border-right: 2px solid orange;
