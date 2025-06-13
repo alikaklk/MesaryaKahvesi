@@ -80,6 +80,10 @@ body{
       display: flex;
     }
 
+    .Logo{
+        max-width:80%;
+    }
+
     .nav-links li a {
         color: rgb(94, 58, 7);
         padding: 12px 20px;
