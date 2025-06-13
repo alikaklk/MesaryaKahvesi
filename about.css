@@ -7,9 +7,7 @@ body{
     margin: 0;
 }
 
-.about, .contact, .menu, .home-icon{
-    text-decoration: none;
-}
+
 
 .navbar {
     background-color: #ffffff;
@@ -27,19 +25,24 @@ body{
     position: sticky;
     top: 0;
     z-index: 1000;
-    margin-top: 90px;
+    margin: 0 auto;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .nav-links li a {
     color: rgb(94, 58, 7);
     text-decoration: none;
     transition: color 0.3s;
-    margin-right: 70px;
+    padding: 5px 10px;
+    text-decoration: none;
+    white-space: nowrap;
 }
 .nav-links li a:hover {
     color: #eeb610;
@@ -65,12 +68,17 @@ body{
 }
 
 @media screen and (max-width: 500px) {
+    .navbar{
+        padding: 10px 15px;
+        margin-top: 10px;
+    }
+
     .nav-links {
-      background-color: #c2c0c0;
-      flex-direction: column;
-      width: 100%;
-      display: none;
-      border-radius: 30px;
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   
     .nav-links.active {
@@ -78,11 +86,15 @@ body{
     }
 
     .nav-links li a {
-        color: rgb(94, 58, 7);
-        padding: 12px 20px;
-        font-size: 18px;
-        border-bottom: 1px solid #444;
-        align-items: center;
-        justify-content: center;
+       color: rgb(94, 58, 7);
+        text-decoration: none;
+        transition: color 0.3s;
+        padding: 5px 8px;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+  
+    .menu-toggle {
+      display: none;
     }
 }
