@@ -1,0 +1,88 @@
+body{
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.about, .contact, .menu, .home-icon{
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-color: black;
+    border: solid;
+    border-radius: 50px;
+    height: 20px;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-top: 90px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li a {
+    color: rgb(94, 58, 7);
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-right: 70px;
+}
+.nav-links li a:hover {
+    color: #eeb610;
+}
+.logo-container{
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: rgb(94, 58, 7);
+  
+}
+
+.nav-links li a.active {
+    color: #eeb610; /* aktif link rengi */
+    font-weight: bold;
+    border-bottom: 2px solid #eeb610;
+}
+
+@media screen and (max-width: 500px) {
+    .nav-links {
+      background-color: #c2c0c0;
+      flex-direction: column;
+      width: 100%;
+      display: none;
+      border-radius: 30px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+
+    .nav-links li a {
+        color: rgb(94, 58, 7);
+        padding: 12px 20px;
+        font-size: 18px;
+        border-bottom: 1px solid #444;
+        align-items: center;
+        justify-content: center;
+    }
+}
