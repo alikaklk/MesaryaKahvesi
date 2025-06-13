@@ -32,6 +32,8 @@ body{
     list-style: none;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .nav-links li a {
     color: rgb(94, 58, 7);
