@@ -73,9 +73,7 @@ body{
 }
 @media screen and (max-width: 500px) {
 
-    body{
-      background-image: url(images/background.jpg);
-    }
+    
 
     .navbar{
       padding: 10px 15px;
